@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="COVID19.MainPage"
+             Padding="20,20,20,0"
+             BackgroundColor="#FFFFFF">
+
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <StackLayout>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.Row="0" Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <ContentView Grid.Row="0" Grid.Column="0">
+                            <Label Text="สถานการณ์ไวรัส COVID-19" TextColor="Black" FontSize="Title" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                        </ContentView>
+
+                        <ContentView Grid.Row="1" Grid.Column="0" Padding="0,10,0,10">
+                            <Label x:Name="date" TextColor="Black" FontSize="Small" FontAttributes="Bold" HorizontalTextAlignment="End"/>
+                        </ContentView>
+                    </Grid>
+
+                    <Grid Grid.Row="1" Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <ContentView Grid.Row="0" Grid.Column="0" Padding="1,0,1,0">
+                            <Frame BackgroundColor="#c83812" CornerRadius="30">
+                                <StackLayout>
+                                    <ContentView>
+                                        <Label Text="ติดเชื้อสะสม" TextColor="#FFFFFF" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                    </ContentView>
+                                    <ContentView>
+                                        <Label x:Name="cases" TextColor="#FFFFFF" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                    </ContentView>
+                                    <ContentView>
+                                        <Label x:Name="casestoday" TextColor="#FFFFFF" FontSize="Small" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                    </ContentView>
+                                </StackLayout>
+                            </Frame>
+                        </ContentView>
+                    </Grid>
+
+                    <Grid Grid.Row="2" Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <ContentView Grid.Row="0" Grid.Column="0" Padding="1,0,1,0">
+                            <Frame BackgroundColor="#575756" CornerRadius="30">
+                                <StackLayout>
+                                    <ContentView Grid.Row="0" Grid.Column="0">
+                                        <Label Text="เสียชีวิต" TextColor="#FFFFFF" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                    </ContentView>
+                                    <ContentView Grid.Row="1" Grid.Column="0">
+                                        <Label x:Name="death" TextColor="#FFFFFF" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                    </ContentView>
+                                    <ContentView Grid.Row="2" Grid.Column="0">
+                                        <Label x:Name="deathtoday" TextColor="#FFFFFF" FontSize="Small" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                    </ContentView>
+                                </StackLayout>
+                            </Frame>
+                        </ContentView>
+                    </Grid>
+
+                    <Grid Grid.Row="3" Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <ContentView Grid.Row="0" Grid.Column="0" Padding="1,0,1,0">
+                            <Frame BackgroundColor="#1c7c4e" CornerRadius="30">
+                                <StackLayout>
+                                    <ContentView>
+                                        <Label Text="รักษาหายแล้ว" TextColor="#FFFFFF" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                    </ContentView>
+                                    <ContentView>
+                                        <Label x:Name="recovered" TextColor="#FFFFFF" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                    </ContentView>
+                                    <ContentView>
+                                        <Label x:Name="recoveredtoday" TextColor="#FFFFFF" FontSize="Small" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                    </ContentView>
+                                </StackLayout>
+                            </Frame>
+                        </ContentView>
+                    </Grid>
+
+                    <Grid Grid.Row="4" Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <ContentView Grid.Row="0" Grid.Column="0" Padding="1,0,1,0">
+                            <Frame BackgroundColor="#307fe2" CornerRadius="30">
+                                <StackLayout>
+                                    <ContentView>
+                                        <Label Text="รักษาอยู่ในโรงพยาบาล" TextColor="#FFFFFF" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                    </ContentView>
+                                    <ContentView>
+                                        <Label x:Name="hospitalized" TextColor="#FFFFFF" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                    </ContentView>
+                                    <ContentView>
+                                        <Label x:Name="hospitalizedtoday" TextColor="#FFFFFF" FontSize="Small" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                    </ContentView>
+                                </StackLayout>
+                            </Frame>
+                        </ContentView>
+                    </Grid>
+
+                    <Grid Grid.Row="5" Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <ContentView Grid.Row="0" Grid.Column="0">
+                            <Label Text="ขอขอบคุณข้อมูลจาก" TextColor="Black" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="End"/>
+                        </ContentView>
+
+                        <ContentView Grid.Row="1" Grid.Column="0">
+                            <Label x:Name="devby" TextColor="Black" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="End"/>
+                        </ContentView>
+                    </Grid>
+                </Grid>
+                <!--<Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <ContentView Grid.Row="0" Grid.Column="0">
+                        <Label Text="สถานการณ์ไวรัส COVID-19" TextColor="Black" FontSize="Title" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                    </ContentView>
+
+                    <ContentView Grid.Row="1" Grid.Column="0">
+                        <Label x:Name="date" TextColor="Black" FontSize="Small" FontAttributes="Bold" HorizontalTextAlignment="End"/>
+                    </ContentView>
+                </Grid>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <ContentView Grid.Row="0" Grid.Column="0" Padding="1,0,1,0">
+                        <Frame BackgroundColor="#c83812" CornerRadius="30">
+                            <StackLayout>
+                                <ContentView>
+                                    <Label Text="ติดเชื้อสะสม" TextColor="#FFFFFF" FontSize="Title" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                </ContentView>
+                                <ContentView>
+                                    <Label x:Name="cases" TextColor="#FFFFFF" FontSize="Title" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                </ContentView>
+                                <ContentView>
+                                    <Label x:Name="casestoday" TextColor="#FFFFFF" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                </ContentView>
+                            </StackLayout>
+                        </Frame>
+                    </ContentView>
+                </Grid>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <ContentView Grid.Row="0" Grid.Column="0" Padding="1,0,1,0">
+                        <Frame BackgroundColor="#575756" CornerRadius="30">
+                            <StackLayout>
+                                <ContentView Grid.Row="0" Grid.Column="0">
+                                    <Label Text="เสียชีวิต" TextColor="#FFFFFF" FontSize="Title" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                </ContentView>
+                                <ContentView Grid.Row="1" Grid.Column="0">
+                                    <Label x:Name="death" TextColor="#FFFFFF" FontSize="Title" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                </ContentView>
+                                <ContentView Grid.Row="2" Grid.Column="0">
+                                    <Label x:Name="deathtoday" TextColor="#FFFFFF" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                </ContentView>
+                            </StackLayout>
+                        </Frame>
+                    </ContentView>
+                </Grid>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <ContentView Grid.Row="0" Grid.Column="0" Padding="1,0,1,0">
+                        <Frame BackgroundColor="#1c7c4e" CornerRadius="30">
+                            <StackLayout>
+                                <ContentView>
+                                    <Label Text="รักษาหายแล้ว" TextColor="#FFFFFF" FontSize="Title" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                </ContentView>
+                                <ContentView>
+                                    <Label x:Name="recovered" TextColor="#FFFFFF" FontSize="Title" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                </ContentView>
+                                <ContentView>
+                                    <Label x:Name="recoveredtoday" TextColor="#FFFFFF" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                </ContentView>
+                            </StackLayout>
+                        </Frame>
+                    </ContentView>
+                </Grid>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <ContentView Grid.Row="0" Grid.Column="0" Padding="1,0,1,0">
+                        <Frame BackgroundColor="#307fe2" CornerRadius="30">
+                            <StackLayout>
+                                <ContentView>
+                                    <Label Text="รักษาอยู่ในโรงพยาบาล" TextColor="#FFFFFF" FontSize="Title" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                </ContentView>
+                                <ContentView>
+                                    <Label x:Name="hospitalized" TextColor="#FFFFFF" FontSize="Title" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                </ContentView>
+                                <ContentView>
+                                    <Label x:Name="hospitalizedtoday" TextColor="#FFFFFF" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                </ContentView>
+                            </StackLayout>
+                        </Frame>
+                    </ContentView>
+                </Grid>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <ContentView Grid.Row="0" Grid.Column="0">
+                        <Label Text="ขอขอบคุณข้อมูลจาก" TextColor="Black" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="End"/>
+                    </ContentView>
+
+                    <ContentView Grid.Row="1" Grid.Column="0">
+                        <Label x:Name="devby" TextColor="Black" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="End"/>
+                    </ContentView>
+                </Grid>-->
+            </StackLayout>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+
+</ContentPage>

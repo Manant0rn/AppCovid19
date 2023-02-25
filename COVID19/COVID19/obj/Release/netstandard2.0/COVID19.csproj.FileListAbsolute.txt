@@ -1,0 +1,15 @@
+C:\Users\Mighty\Documents\Testcode\Xamarin\COVID19\COVID19\COVID19\bin\Release\netstandard2.0\COVID19.deps.json
+C:\Users\Mighty\Documents\Testcode\Xamarin\COVID19\COVID19\COVID19\bin\Release\netstandard2.0\COVID19.dll
+C:\Users\Mighty\Documents\Testcode\Xamarin\COVID19\COVID19\COVID19\bin\Release\netstandard2.0\ref\COVID19.dll
+C:\Users\Mighty\Documents\Testcode\Xamarin\COVID19\COVID19\COVID19\bin\Release\netstandard2.0\COVID19.pdb
+C:\Users\Mighty\Documents\Testcode\Xamarin\COVID19\COVID19\COVID19\obj\Release\netstandard2.0\COVID19.csproj.AssemblyReference.cache
+C:\Users\Mighty\Documents\Testcode\Xamarin\COVID19\COVID19\COVID19\obj\Release\netstandard2.0\App.xaml.g.cs
+C:\Users\Mighty\Documents\Testcode\Xamarin\COVID19\COVID19\COVID19\obj\Release\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Mighty\Documents\Testcode\Xamarin\COVID19\COVID19\COVID19\obj\Release\netstandard2.0\COVID19.AssemblyInfoInputs.cache
+C:\Users\Mighty\Documents\Testcode\Xamarin\COVID19\COVID19\COVID19\obj\Release\netstandard2.0\COVID19.AssemblyInfo.cs
+C:\Users\Mighty\Documents\Testcode\Xamarin\COVID19\COVID19\COVID19\obj\Release\netstandard2.0\COVID19.csproj.CoreCompileInputs.cache
+C:\Users\Mighty\Documents\Testcode\Xamarin\COVID19\COVID19\COVID19\obj\Release\netstandard2.0\XamlC.stamp
+C:\Users\Mighty\Documents\Testcode\Xamarin\COVID19\COVID19\COVID19\obj\Release\netstandard2.0\COVID19.dll
+C:\Users\Mighty\Documents\Testcode\Xamarin\COVID19\COVID19\COVID19\obj\Release\netstandard2.0\ref\COVID19.dll
+C:\Users\Mighty\Documents\Testcode\Xamarin\COVID19\COVID19\COVID19\obj\Release\netstandard2.0\COVID19.pdb
+C:\Users\Mighty\Documents\Testcode\Xamarin\COVID19\COVID19\COVID19\obj\Release\netstandard2.0\COVID19.GeneratedMSBuildEditorConfig.editorconfig
